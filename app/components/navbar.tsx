@@ -1,11 +1,7 @@
 // @flow strict
-import initializeTranslations from "app/i18n";
 import Link from "next/link";
 
-async function Navbar({ params: { locale } }: { params: { locale: string } }) {
-  const i18nNamespaces = ["common"];
-  const { t, resources } = await initializeTranslations(locale, i18nNamespaces);
-
+async function Navbar() {
   return (
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
