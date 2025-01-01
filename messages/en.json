@@ -1,11 +1,15 @@
 {
     "Home": {
-        "title": "Hello",
-        "description": "This is"
+        "title": "Hello,",
+        "contact": "CONTACT ME",
+        "cv": "GET RESUME"
     },
-    "Step1": {
-        "title": "Step 1 Title",
-        "EXPLANATION_PARAGRAPH1": "lorem ipsum"
+    "Navbar": {
+        "about": "ABOUT",
+        "experience": "EXPERIENCE",
+        "skills": "SKILLS",
+        "education": "EDUCATION",
+        "project": "PROJECT"
     },
     "Step2": {
         "title": "Step 2 Title",

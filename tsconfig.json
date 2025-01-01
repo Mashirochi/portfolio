@@ -18,6 +18,9 @@
       ],
       "@/utils/*": [
         "utils/*"
+      ],
+      "@/assets/*": [
+        "app/assets/*"
       ]
     },
     "module": "esnext",

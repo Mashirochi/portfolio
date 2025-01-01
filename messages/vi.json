@@ -1,0 +1,20 @@
+{
+    "Home": {
+        "title": "Xin chào,",
+        "contact": "LIÊN LẠC",
+        "cv": "TẢI CV"
+    },
+    "Navbar": {
+        "about": "GIỚI THIỆU",
+        "experience": "KINH NGHIỆM",
+        "skills": "KĨ NĂNG",
+        "education": "HỌC VẤN",
+        "project": "ĐỒ ÁN"
+    },
+    "Step2": {
+        "title": "Step 2 Title",
+        "EXPLANATION_PARAGRAPH1": "lorem ipsum",
+        "EXPLANATION_PARAGRAPH2": "lorem ipsum",
+        "EXPLANATION_PARAGRAPH3": "lorem ipsum"
+    }
+}
