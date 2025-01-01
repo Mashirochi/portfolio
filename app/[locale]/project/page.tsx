@@ -1,7 +1,7 @@
 // @flow strict
 
-import BlogCard from "../components/homepage/blog/blog-card";
 import { project_data } from "@/utils/data/projects";
+import BlogCard from "app/components/homepage/blog/blog-card";
 async function page() {
   return (
     <div className="py-8" >

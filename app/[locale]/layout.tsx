@@ -4,8 +4,9 @@ import "./css/card.scss";
 import "./css/globals.scss";
 import { Metadata } from "next";
 import { ToastContainer } from "react-toastify";
-import Navbar from "./components/navbar";
-import ScrollToTop from "./components/helper/scroll-to-top";
+import Navbar from "app/components/navbar";
+import ScrollToTop from "app/components/helper/scroll-to-top";
+
 
 export const metadata: Metadata = {
   title: "Portfolio of Abu Said - Software Developer",
