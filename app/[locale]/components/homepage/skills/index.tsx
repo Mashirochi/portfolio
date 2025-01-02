@@ -49,6 +49,7 @@ function Skills() {
                 <div className="flex flex-col items-center justify-center gap-3 p-6">
                   <div className="h-8 sm:h-10">
                     <Image
+                      style={{ width: 40, height: 40 }}
                       src={skillsImage(skill)?.src}
                       alt={skill}
                       width={40}

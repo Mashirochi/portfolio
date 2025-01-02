@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
+
 :root {
   --foreground-rgb: rgb(211, 216, 232);
 }
