@@ -4,6 +4,7 @@ import dbConnect from "@/utils/db";
 import { Education } from "@/utils/models/education";
 import { redirect } from "@/i18n/routing";
 import EducationsClient from "@/components/dashboard/educations/EducationsClient";
+import { educations as localEducations } from "@/utils/data/educations";
 
 export default async function EducationsPage({ params }: { params: Promise<{ locale: string }> }) {
   const session = await getServerSession(authOptions);
@@ -20,7 +21,6 @@ export default async function EducationsPage({ params }: { params: Promise<{ loc
 
   // Auto-seed data if database is empty
   if (educations.length === 0) {
-    const { educations: localEducations } = await import("@/utils/data/educations");
     const seedData = localEducations.map((edu: any) => ({
       vi_title: edu.vi_title || "",
       en_title: edu.en_title || "",

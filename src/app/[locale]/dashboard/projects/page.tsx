@@ -4,6 +4,7 @@ import dbConnect from "@/utils/db";
 import { Project } from "@/utils/models/project";
 import { redirect } from "@/i18n/routing";
 import ProjectsClient from "@/components/dashboard/projects/ProjectsClient";
+import { project_data } from "@/utils/data/projects";
 
 export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
   const session = await getServerSession(authOptions);
@@ -20,7 +21,6 @@ export default async function ProjectsPage({ params }: { params: Promise<{ local
 
   // Auto-seed data if database is empty
   if (projects.length === 0) {
-    const { project_data } = await import("@/utils/data/projects");
     const seedData = project_data.map((proj: any, idx: number) => ({
       vi_title: proj.title || "",
       en_title: proj.title || "",

@@ -4,6 +4,7 @@ import dbConnect from "@/utils/db";
 import { PersonalData } from "@/utils/models/personal-data";
 import { redirect } from "@/i18n/routing";
 import PersonalDataClient from "@/components/dashboard/personal-data/PersonalDataClient";
+import { personalData as localPersonalData } from "@/utils/data/personal-data";
 
 export default async function PersonalDataPage({ params }: { params: Promise<{ locale: string }> }) {
   const session = await getServerSession(authOptions);
@@ -20,7 +21,6 @@ export default async function PersonalDataPage({ params }: { params: Promise<{ l
 
   // Auto-seed data if database is empty
   if (!personalData) {
-    const { personalData: localPersonalData } = await import("@/utils/data/personal-data");
     personalData = await PersonalData.create({
       name: localPersonalData.name,
       profile: localPersonalData.profile,
