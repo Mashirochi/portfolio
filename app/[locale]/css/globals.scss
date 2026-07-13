@@ -9,7 +9,6 @@
   }
 }
 
-
 :root {
   --foreground-rgb: rgb(211, 216, 232);
 }
@@ -44,4 +43,24 @@ body {
 .sticky-card {
   // padding-top: calc(var(--index) * 2.5rem);
   top: calc(var(--index) * 4rem);
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1224;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a5a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6; /* violet-500 */
 }

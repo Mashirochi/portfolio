@@ -1,6 +1,6 @@
-// @flow strict
 
-import Link from "next/link";
+import { Link } from "i18n/routing";
+
 
 function page() {
   return (

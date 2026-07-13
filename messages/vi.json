@@ -10,5 +10,9 @@
         "skills": "KĨ NĂNG",
         "education": "HỌC VẤN",
         "project": "ĐỒ ÁN"
+    },
+    "Metadata": {
+        "homepage_title": "Portfolio của Lưu Tuấn Dũng - Software Developer",
+        "homepage_description": "Đây là portfolio của Lưu Tuấn Dũng. Tôi là một lập trình viên Full-Stack, có kinh nghiệm làm việc với nhiều dự án khác nhau. Tôi yêu thích công nghệ và luôn nỗ lực học hỏi để trở thành một lập trình viên giỏi hơn."
     }
 }

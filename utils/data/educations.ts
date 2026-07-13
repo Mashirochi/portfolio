@@ -1,20 +1,16 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
+    vi_title: "Học viện công nghệ bưu chính viễn thông",
+    en_title: "Posts and Telecommunications Institute of Technology",
+    duration: "2025 - Present",
+    institution: "Sinh viên lớp tài năng",
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
-  },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    vi_title: "Trường THPT Chuyên Nguyễn Huệ",
+    en_title:"Nguyen Hue high school for the gifted",
+    duration: "2022-2025",
+    institution: "Học sinh",
   }
 ]

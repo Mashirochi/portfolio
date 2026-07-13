@@ -10,5 +10,9 @@
         "skills": "SKILLS",
         "education": "EDUCATION",
         "project": "PROJECT"
+    },
+    "Metadata": {
+        "homepage_title": "Portfolio of Lưu Tuấn Dũng - Software Developer",
+        "homepage_description": "This is the portfolio of Lưu Tuấn Dũng. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges."
     }
 }

@@ -1,7 +1,7 @@
-// @flow strict
-import Link from "next/link";
+import { Link } from "i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { cookies } from 'next/headers'
+import LocaleSwitcher from "./LocaleSwitcher";
 
 async function Navbar() {
   const t = await getTranslations('Navbar');
@@ -14,7 +14,7 @@ async function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            YUKI
+            MASHIROCHI
           </Link>
         </div>
         <ul className="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100" id="navbar-default">
@@ -49,7 +49,7 @@ async function Navbar() {
           </li>
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href={locale === "en" ? `${process.env.NEXT_PUBLIC_APP_URL}/en/project` : `${process.env.NEXT_PUBLIC_APP_URL}/vi/project`}
+              href={"/project"}
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 {t('project')}
@@ -57,14 +57,7 @@ async function Navbar() {
             </Link>
           </li>
           <li>
-
-            <Link
-              href={locale === "en" ? `${process.env.NEXT_PUBLIC_APP_URL}/vi` : `${process.env.NEXT_PUBLIC_APP_URL}/en`}
-              className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              prefetch={true} >
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                {locale === "en" ? "Tiếng Việt" : "English"}
-              </div></Link>
+            <LocaleSwitcher />
           </li>
         </ul>
 

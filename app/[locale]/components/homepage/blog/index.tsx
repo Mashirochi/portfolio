@@ -1,10 +1,10 @@
-// @flow strict
-import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 import BlogCard from './blog-card';
-import { project_data } from '@/utils/data/projects';
+import { Link } from 'i18n/routing';
 
-function Blog() {
+function Blog({ projects, locale }: { projects: any[], locale: string }) {
+  if (!projects || projects.length === 0) return null;
+
   return (
     <div id='blogs' className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
@@ -27,9 +27,9 @@ function Blog() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
         {
-          project_data.slice(0, 6).map((blog, i) => (
-            blog?.cover_image &&
-            <BlogCard blog={blog} key={i} />
+          projects.slice(0, 6).map((project, i) => (
+            project?.cover_image &&
+            <BlogCard blog={project} key={i} locale={locale} />
           ))
         }
       </div>

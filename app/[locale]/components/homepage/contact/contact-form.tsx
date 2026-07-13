@@ -1,5 +1,4 @@
 "use client";
-// @flow strict
 import axios from "axios";
 import { useState } from "react";
 import { TbMailForward } from "react-icons/tb";
